@@ -23,14 +23,14 @@
 	<header>		
 		<div class="wrapper">
 			<div class="header">
-				<div class="b-menu">
+				<div class="header__burger-menu">
 						<input type="checkbox" id="hmt" class="hidden-menu-ticker">
-						<label class="btn-menu" for="hmt">
+						<label class="header__burger-menu__button" for="hmt">
 						    <span class="first"></span>
 						    <span class="second"></span>
 						    <span class="third"></span>
 						</label>
-						<ul class="hidden-menu">
+						<ul class="header__burger-menu__hidden-menu">
 						   	<li><a href="">Свадебная бижутерия</a></li>  
 						    <li><a href="">Аксессуары для волос</a></li>
 						  	<li><a href="">Броши</a></li>
@@ -38,40 +38,40 @@
 						    <li><a href="">Клатчи</a></li>
 						    <li><a href="">Детская бижутерия</a></li>  
 						</ul>
-					</div>
-					<div class="responsive-nav">
-						<ul class="res-navigation">
-							<li><a href="#"><img src="img/res-home.png"></a></li>
-							<li><a href="#"><img src="img/res-search.png"></a></li>
-							<li><a href="#"><img src="img/res-cart.png"></a></li>
-							<li><a href="#"><img src="img/res-login.png"></a></li>
-							<li><a href="#"><img src="img/res-phone.png"></a></li>
-						</ul>						
-					</div>
-				<div class="top">
-					<div class="logo">
+				</div>
+				<div class="header__responsive-nav">
+					<ul class="header__responsive-nav__menu">
+						<li><a href="#"><img src="img/res-home.png"></a></li>
+						<li><a href="#"><img src="img/res-search.png"></a></li>
+						<li><a href="#"><img src="img/res-cart.png"></a></li>
+						<li><a href="#"><img src="img/res-login.png"></a></li>
+						<li><a href="#"><img src="img/res-phone.png"></a></li>
+					</ul>						
+				</div>
+				<div class="header__top-row">
+					<div class="header__top-row__logo">
 						<a href="#">
 							<img src="img/logo.png">
 						</a>
 					</div>
-					<div class="search">
-						<form class="search-area">
+					<div class="header__top-row__search">
+						<form class="header__top-row__search__search-form">
 							<input type="search" name="search"  placeholder="Введите название или артикул">
-							<button class="btn-search"><img src="img/search.png"></button>
+							<button class="search-form__button"><img src="img/search.png"></button>
 						</form>
 					</div>
-					<ul class="worktime">
-						<li class="phone">
+					<ul class="header__top-row__worktime">
+						<li class="header__top-row__worktime__phone">
 							<a href="#">+7 (800) 707-81-39</a>
 						</li>
-						<li class="time">
+						<li class="header__top-row__worktime__time">
 							<span>ПН-ПТ с 9:00 до 18:00</span>
 							<p>Доставка по РФ и СНГ<p>
 						</li>
 					</ul>	
 				</div>	
-				<div class="bot">
-					<ul class="main-nav">
+				<div class="header__bot-row">
+					<ul class="header__bot-row__navigation">
 						<li class="drop-down">
 							<a href="#">
 								<img src="img/drop-menu.png">
@@ -101,9 +101,9 @@
 						<li><a href="#">СКИДКИ</a></li>
 						<li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
 						<li><a href="#">ДОКУМЕНТЫ</a></li>
-						<li><a href="#" class="link-contact">КОНТAКТЫ</a></li>
+						<li><a href="#" class="header__bot-row__navigation__link">КОНТAКТЫ</a></li>
 					</ul>
-					<ul class="account-menu">
+					<ul class="header__bot-row__account-menu">
 						<li>
 							<a href="#">
 								<span class="cart">
@@ -136,18 +136,18 @@
 
 	<main class="content">		
 		<div class="wrapper">
-			<div class="regular slider">
-				<div class="slide">
+			<div class="content__regular-slider">
+				<div class="content__regular-slider__slide">
 					<img src="img/slide.jpg" class="slide-img">
 					<img src="img/slide-small.jpg" class="slide-img-responsive">
 					<span>Новая коллекция<br>SWAROVSKI уже здесь!</span>
 				</div>
-				<div class="slide">
+				<div class="content__regular-slider__slide">
 					<img src="img/slide.jpg" class="slide-img">
 					<img src="img/slide-small.jpg" class="slide-img-responsive">
 					<span>Новая коллекция<br>SWAROVSKI уже здесь!</span>
 				</div>
-				<div class="slide">
+				<div class="content__regular-slider__slide">
 					<img src="img/slide.jpg" class="slide-img">
 					<img src="img/slide-small.jpg" class="slide-img-responsive">
 					<span>Новая коллекция<br>SWAROVSKI уже здесь!</span>
@@ -190,7 +190,7 @@
 	<script type="text/javascript" src="js/components/slick.js" ></script>
 	 <script type="text/javascript">
     $(document).on('ready', function() {
-      $(".regular").slick({
+      $(".content__regular-slider").slick({
         dots: true,
         infinite: false,
         slidesToShow: 1,
